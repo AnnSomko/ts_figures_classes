@@ -73,13 +73,13 @@ export class Rectangle implements Figure {
 
   height: number;
 
-  constructor(color: Color, width: number, heigth: number) {
-    if (width <= 0 || heigth <= 0) {
+  constructor(color: Color, width: number, height: number) {
+    if (width <= 0 || height <= 0) {
       throw new Error('Width and height must be greater than 0');
     }
     this.color = color;
     this.width = width;
-    this.height = heigth;
+    this.height = height;
   }
 
   getArea(): number {
